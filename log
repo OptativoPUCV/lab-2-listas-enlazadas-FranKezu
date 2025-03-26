@@ -10,3 +10,17 @@ Wed, Mar 26, 2025  8:37:22 AM:
  tests:  1|5
 total_score: 10/70
 31f17fb
+Wed, Mar 26, 2025  8:40:12 AM: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function 'firstList':
+list.c:41:16: error: 'List' {aka 'struct List'} has no member named 'data'
+   41 |     return list->data;
+      |                ^~
+list.c:42:1: error: control reaches end of non-void function [-Werror=return-type]
+   42 | }
+      | ^
+cc1.exe: all warnings being treated as errors
+Compilation failed
+f2504e4
