@@ -60,7 +60,7 @@ void * prevList(List * list) {
     if(list->current->prev == NULL) return NULL;
     list->current = list->current->prev;
 
-    return NULL
+    return NULL;
 }
 
 void pushFront(List * list, void * data) {
