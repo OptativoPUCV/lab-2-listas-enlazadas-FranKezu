@@ -95,3 +95,13 @@ Thu, Mar 27, 2025  1:26:46 PM:
  1 file changed, 4 insertions(+), 1 deletion(-)
  tests:  0|0
 4624eb7
+Thu, Mar 27, 2025  1:27:23 PM: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function 'prevList':
+list.c:64:1: error: expected ';' before '}' token
+   64 | }
+      | ^
+Compilation failed
+ea7e701
