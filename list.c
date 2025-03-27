@@ -64,13 +64,14 @@ void * prevList(List * list) {
 }
 
 void pushFront(List * list, void * data) {
-    if(list == NULL || list->head == NULL) return NULL;
+    if(list == NULL) return NULL;
+
     Node* nuevo = createNode(data);
     nuevo->data = data;
 
+    nuevo->next = list->head;
+    list->head->prev = nuevo;
     list->head = nuevo;
-    nuevo->next = list->current->next;
-    list->current->prev = nuevo;
     return;
 }
 
