@@ -164,3 +164,16 @@ list.c:66:6: note: declared here
       |      ^~~~~~~~~
 Compilation failed
 9663009
+Thu, Mar 27, 2025  1:35:31 PM: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function 'pushFront':
+list.c:67:51: error: 'return' with a value, in function returning void [-Wreturn-mismatch]
+   67 |     if(list == NULL || list->head == NULL) return NULL;
+      |                                                   ^~~~
+list.c:66:6: note: declared here
+   66 | void pushFront(List * list, void * data) {
+      |      ^~~~~~~~~
+Compilation failed
+e771e31
